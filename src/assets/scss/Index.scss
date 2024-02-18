@@ -1,8 +1,8 @@
 /* ======================= Start-Color ======================= */
-$primary: #7367f0 !important;
-$secondary: #c54b8c !important;
+$primary: #517259 !important;
+$secondary: #0f172a !important;
 $tertiary: #1f1f1f !important;
-$forth: #0f172a !important;
+$forth: #282a2d !important;
 $success: #4bb543 !important;
 $warning: #ff5722 !important;
 $danger: red !important;
@@ -359,6 +359,14 @@ p {
     transform: rotate(0deg);
   }
 }
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
 /* ======================= End-loader ======================= */
 
 /* ======================= Start-Animatedcss ======================= */
@@ -521,6 +529,10 @@ tr:nth-child(even):hover {
 .logo-img{
   width: 50px !important;
   height: 50px !important;
+  @media (max-width: 640px) {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 .activetext {
   color: $dark;
@@ -535,43 +547,64 @@ tr:nth-child(even):hover {
 /* ======================= Start-Home ======================= */
 .banner-img {
   width: 100% !important;
+  height: 500px !important;
+  @media (max-width: 640px) {
+    width: 100% !important;
+    height: 400px !important;
+  }
+}
+.gol-img {
+  width: 100% !important;
+  height: 100px !important;
+  @media (max-width: 640px) {
+    width: 100% !important;
+    height: 50px !important;
+  }
+}
+.count-img {
+  width: 100% !important;
   height: 350px !important;
   @media (max-width: 640px) {
     width: 100% !important;
-    height: 180px !important;
-  }
-}
-.brand-img {
-  width: 100% !important;
-  height: 50px !important;
-  @media (max-width: 640px) {
-    width: 100% !important;
-    height: 90px !important;
+    height: 300px !important;
   }
 }
 .about1-img {
   width: 100% !important;
-  height: 350px !important;
+  height: 500px !important;
   @media (max-width: 640px) {
     width: 100% !important;
     height: 250px !important;
   }
 }
-.gallery-img {
-  width: 100% !important;
-  height: 250px !important;
-  @media (max-width: 640px) {
-    width: 100% !important;
-    height: 150px !important;
-  }
+.circle-img {
+  width: 40px !important;
+  height: 40px !important;
+}
+.info-img {
+  width: 55px !important;
+  height: 55px !important;
 }
 .service-img {
   width: 50px !important;
   height: 50px !important;
 }
-.project-img {
+.product-img {
   width: 100% !important;
-  height: 200px !important;
+  height: 270px !important;
+   @media (max-width: 640px) {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+.connect-img {
+  height: 370px !important;
+}
+.connect-card {
+  height: 370px !important;
+ @media (max-width: 640px) {
+    height: 100% !important;
+  }
 }
 /* ======================= End-Home ======================= */
 

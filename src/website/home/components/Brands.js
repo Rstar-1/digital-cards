@@ -1,114 +1,54 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay } from "swiper";
-import "swiper/swiper.min.css";
-import "swiper/css";
-import brand1 from "../../../assets/service1.png";
-import brand2 from "../../../assets/service2.png";
-import brand3 from "../../../assets/service3.png";
-import brand4 from "../../../assets/service4.png";
-import brand5 from "../../../assets/service5.png";
-import brand6 from "../../../assets/service6.png";
+import Fade from "react-reveal/Fade";
+import count from "../../../assets/banner.jpg";
 
 const Brands = () => {
-  SwiperCore.use([Autoplay]);
-
   return (
-    <div className="ptpx20 pbpx20 bg-ec">
-      <div className="container mx-auto">
-        <Swiper
-          grabCursor={true}
-          className="mySwiper"
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            1536: {
-              slidesPerView: 5,
-              spaceBetween: 10,
-            },
-            1280: {
-              slidesPerView: 5,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            640: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            425: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            320: {
-              slidesPerView: 2.1,
-              spaceBetween: 30,
-            },
-            800: {
-              slidesPerView: 3.5,
-              spaceBetween: 30,
-            },
-          }}
-        >
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand1}
-                alt="brand"
-                className="brand-img object-contain"
-              />
+    <div className="relative count-img">
+      <img
+        src={count}
+        alt="count"
+        className="w-full filter-b5 count-img object-cover"
+      />
+      <div className="absolute top-0 text-center left-0 flex items-center justify-center count-img">
+        <div className="w-80 sm-w-90">
+          <Fade bottom cascade>
+            <div className="grid-cols-4 sm-grid-cols-2 gap-12">
+              <div className="text-center">
+                <h2 className="textwhite font-600 mbpx1 fsize40 sm-fsize20">
+                  1200 +
+                </h2>
+                <p className="textwhite font-500 sm-font-400 mtpx9 leading mbpx1 fsize25 sm-fsize14">
+                  Active Customer
+                </p>
+              </div>
+              <div className="text-center">
+                <h2 className="textwhite font-600 mbpx1 fsize40 sm-fsize20">
+                  1200 +
+                </h2>
+                <p className="textwhite font-500 sm-font-400 mtpx9 leading mbpx1 fsize25 sm-fsize14">
+                  Specialist Staff
+                </p>
+              </div>
+              <div className="text-center">
+                <h2 className="textwhite font-600 mbpx1 fsize40 sm-fsize20">
+                  1200 +
+                </h2>
+                <p className="textwhite font-500 sm-font-400 mtpx9 leading mbpx1 fsize25 sm-fsize14">
+                  Ongoing Project
+                </p>
+              </div>
+              <div className="text-center">
+                <h2 className="textwhite font-600 mbpx1 fsize40 sm-fsize20">
+                  1200 +
+                </h2>
+                <p className="textwhite font-500 sm-font-400 mtpx9 leading mbpx1 fsize25 sm-fsize14">
+                  Completed Project
+                </p>
+              </div>
             </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand2}
-                alt="brand"
-                className="brand-img object-contain"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand3}
-                alt="brand"
-                className="brand-img object-contain"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand4}
-                alt="brand"
-                className="brand-img object-contain"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand5}
-                alt="brand"
-                className="brand-img object-contain"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="">
-              <img
-                src={brand6}
-                alt="brand"
-                className="brand-img object-contain"
-              />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+          </Fade>
+        </div>
       </div>
     </div>
   );

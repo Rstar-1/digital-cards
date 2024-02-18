@@ -26,7 +26,7 @@ const App = () => {
         </Routes>
         <Footer />
       </Router>
-      <div className="fixed bottom-0 right-0">
+      <div className="fixed bottom-0 z-99 right-0">
         <div
           className="bgprimary cursor-pointer up-box rounded-full flex justify-center items-center m10"
           onClick={scrollToTop}

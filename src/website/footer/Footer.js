@@ -4,7 +4,7 @@ import footer from "../../assets/logo.jpg"
 
 const Footer = () => {
   return (
-    <div className="w-full bgforth ptpx20 pbpx40 sm-ptpx20 sm-pbpx20">
+    <div className="w-full bgforth ptpx40 pbpx40 sm-ptpx20 sm-pbpx20">
       <div className="flex sm-block items-center justify-between gap-12 container mx-auto">
         <div className="">
           <img src={footer} alt="footer" className="footerimg object-contain" />

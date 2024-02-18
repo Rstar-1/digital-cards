@@ -19,8 +19,8 @@ const Navbar = () => {
     },
     {
       icon: "grid",
-      name: "Gallery",
-      scroll: "gallery",
+      name: "Features",
+      scroll: "features",
     },
     {
       icon: "shopping-cart",
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="bgprimary p5">
               <div className="flex items-center justify-between gap-4 plpx10 prpx10">
                 <p className="fsize16 textwhite mtpx4 mbpx4 cursor-pointer font-500">
-                  RS Developers
+                  Kepal Enterprises
                 </p>
                 <FeatherIcon
                   icon="x"
@@ -62,11 +62,14 @@ const Navbar = () => {
                       smooth={true}
                       offset={50}
                       duration={500}
-                      className="fsize14 flex items-center gap-9 activetext  cursor-pointer"
+                      className="fsize14 flex items-center gap-9 activetext cursor-pointer"
                       to={e.scroll}
                     >
                       <FeatherIcon icon={e.icon} className="flex" size={16} />
-                      <p className="mtpx2" onClick={() => setsidebarshow(false)}>
+                      <p
+                        className="mtpx2"
+                        onClick={() => setsidebarshow(false)}
+                      >
                         {e.name}
                       </p>
                     </Link>
